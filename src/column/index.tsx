@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import styled, { css } from "styled-components";
 import { AllowedResponsiveProps, ColumnType } from "../typings/column";
@@ -19,13 +18,13 @@ const responsiveStyle = (props: ColumnType) => {
     .filter(
       ([key]) =>
         ALLOWED_RESPONSIVE_COLUMN_PROPS.indexOf(
-          key as AllowedResponsiveProps,
-        ) !== -1,
+          key as AllowedResponsiveProps
+        ) !== -1
     )
     .map(([key, values]) => {
       const prop = camelToKebabCase(key);
       assembledStyle = css`${assembledStyle}${Object.entries(
-        customTheme.breakPoints,
+        customTheme.breakPoints
       ).map(([k, breakPointValue]) => {
         return css`
           @media (min-width: ${breakPointValue}) {

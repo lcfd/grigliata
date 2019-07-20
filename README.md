@@ -4,6 +4,6 @@ A styled-components grid system.
 
 ## Used in
 
-- todo
+- [pycon.it](https://pycon.it)
 
-Boilerplate: https://github.com/michal-wrzosek/react-component-lib
+Project started using https://github.com/michal-wrzosek/react-component-lib

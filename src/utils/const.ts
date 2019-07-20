@@ -11,7 +11,7 @@ export const ALLOWED_RESPONSIVE_ROW_PROPS = [
 ];
 
 export const ALLOWED_RESPONSIVE_COLUMN_PROPS = [
-  'colWidth',
+  'columnWidth',
   'marginTop',
   'marginBottom',
   'marginLeft',

@@ -17,7 +17,7 @@ export type ColumnResponsiveValuesType = {
 };
 
 export type ColumnSpacingType = {
-  colWidth?: ColumnWidthValuesType;
+  columnWidth?: ColumnWidthValuesType;
   marginTop?: ColumnResponsiveValuesType;
   marginBottom?: ColumnResponsiveValuesType;
   marginLeft?: ColumnResponsiveValuesType;

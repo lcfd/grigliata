@@ -15,7 +15,7 @@ class App extends Component {
           }}
         >
           <Column
-            colWidth={{
+            columnWidth={{
               mobile: 12,
               tabletLandscape: 12,
               tabletPortrait: 12,

@@ -1,3 +1,4 @@
-import { TestComponent } from "./components/TestComponent/TestComponent";
+import { Row } from './row';
+import { Column } from './column';
 
-export { TestComponent };
+export { Row, Column };

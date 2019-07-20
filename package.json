@@ -1,6 +1,11 @@
 {
   "name": "grigliata",
-  "version": "0.0.12",
+  "version": "0.0.13",
+  "keywords": [
+    "react",
+    "styled-components",
+    "typescript"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "repository": {

@@ -7,7 +7,7 @@ import { ALLOWED_RESPONSIVE_COLUMN_PROPS } from "../utils/const";
 import { customTheme } from "../utils/theme";
 
 const createProperty = (prop: string, value: number) => {
-  return prop === "col-width"
+  return prop === "column-width"
     ? `width: ${(value / 12) * 100}%;`
     : `${prop}: ${value}rem;`;
 };

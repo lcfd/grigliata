@@ -2,6 +2,7 @@
   "name": "example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fedriz.github.io/grigliata",
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

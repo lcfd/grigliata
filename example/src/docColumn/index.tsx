@@ -5,24 +5,25 @@ export const DocColumn = () => {
     <div>
       <h4>Column</h4>
       <p>
-        Inside a Row will be a
+        A grid system needs a Column component. Here we go.
         <br />
         It has a default <strong>0.5rem</strong> padding.
         <br />
         <br />
         <strong>Props</strong>
-        <ul>
-          <li>columnWidth</li>
-          <li>marginTop</li>
-          <li>marginBottom</li>
-          <li>marginLeft</li>
-          <li>marginRight</li>
-          <li>paddingTop</li>
-          <li>paddingBottom</li>
-          <li>paddingLeft</li>
-          <li>paddingRight</li>
-        </ul>
-        <br />
+      </p>
+      <ul>
+        <li>columnWidth</li>
+        <li>marginTop</li>
+        <li>marginBottom</li>
+        <li>marginLeft</li>
+        <li>marginRight</li>
+        <li>paddingTop</li>
+        <li>paddingBottom</li>
+        <li>paddingLeft</li>
+        <li>paddingRight</li>
+      </ul>
+      <p>
         Each of them take the same object type as value: <br />
       </p>
       <pre>

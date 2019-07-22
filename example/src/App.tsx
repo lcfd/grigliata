@@ -4,6 +4,8 @@ import { DocRow } from "./docRow";
 import { Column, Row } from "./reactComponentLib";
 import { DocColumn } from "./docColumn";
 import { DocRoadmap } from "./docRoadmap";
+import { Container } from "./reactComponentLib";
+import { DocContainer } from "./docContainer";
 
 const Title = styled.h1`
   text-align: center;
@@ -15,30 +17,6 @@ export const SectionTitle = styled.h3`
   border: 1px solid #444;
   padding: 1rem;
   margin-top: 2rem;
-`;
-
-const Container = styled.div`
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media (min-width: 576px) {
-    padding-right: 15px;
-    padding-left: 15px;
-    max-width: 540px;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 720px;
-  }
-
-  @media (min-width: 992px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 1140px;
-  }
 `;
 
 class App extends Component {
@@ -60,7 +38,12 @@ class App extends Component {
               desktop: 12
             }}
           >
-            <Title>GRIGLIATA 🥩</Title>
+            <Title>
+              GRIGLIATA{" "}
+              <span role="img" aria-label="beef">
+                🥩
+              </span>
+            </Title>
           </Column>
         </Row>
         <Row paddingLeft={ROW_PADDING} paddingRight={ROW_PADDING}>
@@ -107,20 +90,29 @@ class App extends Component {
   desktop: '1200px'
 }`}
             </pre>
+            <h4>Required</h4>
             <p>
-              <h4>Required</h4>
-              <p>
-                This CSS snippet is required in order to obtain working columns.
-              </p>
-              <pre>
-                {`*,
+              This CSS snippet is required in order to obtain working columns.
+              <br />
+              <br />
+            </p>
+            <pre>
+              {`*,
 *::before,
 *::after {
   box-sizing: border-box;
 }`}
-              </pre>
-            </p>
+            </pre>
+            <SectionTitle>Now you can start rolling around</SectionTitle>
+            <pre>
+              {`npm i grigliata
+              
+or
+
+yarn add grigliata`}
+            </pre>
             <SectionTitle>Components</SectionTitle>
+            <DocContainer />
             <DocRow />
             <DocColumn />
             <DocRoadmap />

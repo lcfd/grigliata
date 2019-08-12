@@ -1,5 +1,5 @@
-type ContainerCustomType = {
-  fullWidth: boolean;
+export type ContainerCustomizationsType = {
+  fullWidth?: boolean;
 };
 
-export type ContainerType = React.FunctionComponent<ContainerCustomType>;
+export type ContainerType = React.FC<ContainerCustomizationsType>;

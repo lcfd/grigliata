@@ -27,6 +27,7 @@ class App extends Component {
       tabletLandscape: 0.5,
       desktop: 0.5
     };
+
     return (
       <Container>
         <Row paddingLeft={ROW_PADDING} paddingRight={ROW_PADDING}>

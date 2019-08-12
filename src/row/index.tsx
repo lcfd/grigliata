@@ -18,7 +18,7 @@ const responsiveStyle = (props: RowType) => {
     .filter(
       ([key]) =>
         ALLOWED_RESPONSIVE_ROW_PROPS.indexOf(key as AllowedResponsiveProps) !==
-        -1,
+        -1
     )
     .map(([key, values]) => {
       const prop = camelToKebabCase(key);

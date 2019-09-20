@@ -38,14 +38,13 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "build-watch": "rollup -c -w",
-    "install-all": "npm i && cd example && npm i",
-    "start-example": "cd example && npm start",
-    "deploy-example": "cd example && npm run deploy",
-    "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
+    "start": "rollup -c -w",
+    "install-all": "yarn && cd docs && yarn",
+    "start-docs": "cd docs && yarn start",
+    "deploy-docs": "cd docs && yarn deploy",
+    "dev": "concurrently --kill-others \"yarn start\" \"yarn start-docs\"",
     "test": "ts-node test/test.ts",
-    "pretest": "npm run build",
-    "upgrade-interactive": "npm-check --update"
+    "pretest": "yarn build"
   },
   "files": [
     "dist"

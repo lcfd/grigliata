@@ -6,11 +6,11 @@ import { camelToKebabCase } from "../utils/camel-to-kebab-case";
 import { ALLOWED_RESPONSIVE_ROW_PROPS } from "../utils/const";
 import { customTheme } from "../utils/theme";
 
-const createProperty = (prop: string, value: number) => {
-  return prop === "justify-content"
-    ? `${prop}: ${value};`
-    : `${prop}: ${value}rem;`;
-};
+// const createProperty = (prop: string, value: number) => {
+//   return prop === "justify-content"
+//     ? `${prop}: ${value};`
+//     : `${prop}: ${value}rem;`;
+// };
 
 const responsiveStyle = (props: RowType) => {
   let assembledStyle = css``;

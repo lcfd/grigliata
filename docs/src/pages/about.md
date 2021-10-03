@@ -15,7 +15,7 @@ A grid system made with styled components.
 
 ## The name?
 
-[Grigliata]([https://link](https://it.wikipedia.org/wiki/Grigliata)) is the italian name of Barbecue.
+[Grigliata](https://it.wikipedia.org/wiki/Grigliata) is the italian name of Barbecue.
 
 Grigliata is a grid system.
 

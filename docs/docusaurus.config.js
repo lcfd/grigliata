@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     title: "Grigliata 🥩",
     tagline: "A styled-components grid system.",
     url: "https://lcfd.github.io",
-    baseUrl: "/",
+    baseUrl: "/grigliata/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.png",

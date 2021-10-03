@@ -7,13 +7,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
   module.exports = {
     title: "Grigliata 🥩",
     tagline: "A styled-components grid system.",
-    url: "https://lcfd.github.io/grigliata/",
+    url: "https://lcfd.github.io",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.png",
     organizationName: "lcfd", // Usually your GitHub org/user name.
-    projectName: "Grigliata", // Usually your repo name.
+    projectName: "grigliata", // Usually your repo name.
 
     presets: [
       [

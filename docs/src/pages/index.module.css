@@ -9,6 +9,7 @@
     var(--ifm-color-primary-darkest) 0%,
     var(--ifm-color-primary-darker) 100%
   );
+  color: #fff;
 }
 
 @media screen and (max-width: 966px) {

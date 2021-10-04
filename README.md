@@ -10,6 +10,39 @@ A styled-components grid system.
 
 [Documentation](https://lcfd.github.io/grigliata/) that is also a demo.
 
+## A full example
+
+```jsx
+export const App = () => {
+  const ROW_PADDING = {
+    mobile: 0.5,
+    tabletPortrait: 0.5,
+    tabletLandscape: 0.5,
+    desktop: 0.5
+  };
+
+  return (
+    <div>
+      <Container>
+          <Row paddingLeft={ROW_PADDING} paddingRight={ROW_PADDING}>
+            <Column
+              columnWidth={{
+                mobile: 12,
+                tabletPortrait: 12,
+                tabletLandscape: 12,
+                desktop: 12
+              }}
+            >
+            <p>Content</p>
+          </Column>
+          </Row>
+      </Container>
+    </div>
+  )
+}
+```
+
+
 ## Development
 
 To test the package we suggest to use the [yalc](https://www.npmjs.com/package/yalc) package.

@@ -1,4 +1,4 @@
-# Grigliata
+![logo](./assets/logo-colored.svg)
 
 A styled-components grid system.
 

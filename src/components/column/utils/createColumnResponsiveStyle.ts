@@ -9,7 +9,8 @@ export const createColumnResponsiveStyle = (props: TColumnType) => {
     const [key, value] = entry;
 
     switch (key) {
-      case 'xp':
+      // Combined paddings
+      case 'xp': {
         return breakPoints.slice(0, value.length).map((breakPoint, i) => {
           const parsedValue = parsePropValue(value[i]);
           return css`
@@ -19,8 +20,9 @@ export const createColumnResponsiveStyle = (props: TColumnType) => {
             }
           `;
         });
+      }
 
-      case 'yp':
+      case 'yp': {
         return breakPoints.slice(0, value.length).map((breakPoint, i) => {
           const parsedValue = parsePropValue(value[i]);
           return css`
@@ -30,8 +32,10 @@ export const createColumnResponsiveStyle = (props: TColumnType) => {
             }
           `;
         });
+      }
 
-      case 'xm':
+      // Combined margins
+      case 'xm': {
         return breakPoints.slice(0, value.length).map((breakPoint, i) => {
           const parsedValue = parsePropValue(value[i]);
           return css`
@@ -41,8 +45,9 @@ export const createColumnResponsiveStyle = (props: TColumnType) => {
             }
           `;
         });
+      }
 
-      case 'ym':
+      case 'ym': {
         return breakPoints.slice(0, value.length).map((breakPoint, i) => {
           const parsedValue = parsePropValue(value[i]);
           return css`
@@ -52,8 +57,94 @@ export const createColumnResponsiveStyle = (props: TColumnType) => {
             }
           `;
         });
+      }
 
-      case 'columnWidth':
+      // Margins: mt mb ml mr
+      case 'mt': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              margin-top: ${parsedValue};
+            }
+          `;
+        });
+      }
+      case 'mb': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              margin-bottom: ${parsedValue};
+            }
+          `;
+        });
+      }
+      case 'ml': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              margin-left: ${parsedValue};
+            }
+          `;
+        });
+      }
+      case 'mr': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              margin-right: ${parsedValue};
+            }
+          `;
+        });
+      }
+
+      // Paddings: pt pb pl pr
+      case 'pt': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              padding-top: ${parsedValue};
+            }
+          `;
+        });
+      }
+      case 'pb': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              padding-bottom: ${parsedValue};
+            }
+          `;
+        });
+      }
+      case 'pl': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              padding-left: ${parsedValue};
+            }
+          `;
+        });
+      }
+      case 'pr': {
+        return breakPoints.slice(0, value.length).map((breakPoint, i) => {
+          const parsedValue = parsePropValue(value[i]);
+          return css`
+            @media (min-width: ${breakPoint}) {
+              padding-right: ${parsedValue};
+            }
+          `;
+        });
+      }
+
+      // Old wordy width
+      case 'columnWidth': {
         return breakPoints.map((breakPoint, i) => {
           return css`
             @media (min-width: ${breakPoint}) {
@@ -62,6 +153,7 @@ export const createColumnResponsiveStyle = (props: TColumnType) => {
             }
           `;
         });
+      }
     }
   });
 };

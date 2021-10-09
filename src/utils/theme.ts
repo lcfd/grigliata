@@ -5,4 +5,4 @@ export const customTheme = {
     tabletLandscape: '992px',
     desktop: '1200px'
   }
-}
+};

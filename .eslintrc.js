@@ -6,7 +6,6 @@ module.exports = {
     jsx: true
   },
   rules: {
-    '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/no-explicit-any': ['error'],
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react/prop-types': false

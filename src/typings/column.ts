@@ -1,12 +1,12 @@
-import { ALLOWED_RESPONSIVE_COLUMN_PROPS } from "../utils/const";
+import { stringOrNumber } from './general';
 
-type ColumnWidthRange = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+type TColumnWidthRange = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
-export type ColumnWidthValuesType = {
-  mobile: ColumnWidthRange;
-  tabletPortrait: ColumnWidthRange;
-  tabletLandscape: ColumnWidthRange;
-  desktop: ColumnWidthRange;
+export type TColumnWidthValuesType = {
+  mobile: TColumnWidthRange;
+  tabletPortrait: TColumnWidthRange;
+  tabletLandscape: TColumnWidthRange;
+  desktop: TColumnWidthRange;
 };
 
 export type ColumnResponsiveValuesType = {
@@ -16,8 +16,8 @@ export type ColumnResponsiveValuesType = {
   desktop: number;
 };
 
-export type ColumnSpacingType = {
-  columnWidth?: ColumnWidthValuesType;
+export type TOldColumnSpacings = {
+  columnWidth?: TColumnWidthValuesType;
   marginTop?: ColumnResponsiveValuesType;
   marginBottom?: ColumnResponsiveValuesType;
   marginLeft?: ColumnResponsiveValuesType;
@@ -28,6 +28,28 @@ export type ColumnSpacingType = {
   paddingRight?: ColumnResponsiveValuesType;
 };
 
-export type ColumnType = React.FunctionComponent<ColumnSpacingType>;
+/**
+ * Array usage
+ *  The order is mobile first so:
+ *    0 -> '320px', 1 -> '768px', 2 -> '992px', 3 -> '1200px'
+ */
+export type TSpacings = {
+  // Combined paddings
+  xp?: stringOrNumber[];
+  yp?: stringOrNumber[];
+  // Combined margins
+  xm?: stringOrNumber[];
+  ym?: stringOrNumber[];
+  // Margins
+  mt?: stringOrNumber[];
+  mb?: stringOrNumber[];
+  ml?: stringOrNumber[];
+  mr?: stringOrNumber[];
+  // Paddings
+  pt?: stringOrNumber[];
+  pb?: stringOrNumber[];
+  pl?: stringOrNumber[];
+  pr?: stringOrNumber[];
+};
 
-export type AllowedResponsiveProps = typeof ALLOWED_RESPONSIVE_COLUMN_PROPS[number];
+export type TColumnType = React.FC<TOldColumnSpacings & TSpacings>;

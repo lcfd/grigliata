@@ -1,4 +1,4 @@
-import { ALLOWED_RESPONSIVE_ROW_PROPS } from "../utils/const";
+import { ALLOWED_RESPONSIVE_ROW_PROPS } from '../utils/const';
 
 export type RowResponsiveValuesType = {
   mobile: number;
@@ -14,7 +14,7 @@ export type RowResponsiveValuesWidthType = {
   desktop: number;
 };
 
-export type AllowedResponsiveProps = typeof ALLOWED_RESPONSIVE_ROW_PROPS[number];
+export type AllowedRowResponsiveProps = typeof ALLOWED_RESPONSIVE_ROW_PROPS[number];
 
 export type RowSpacingType = {
   marginTop?: RowResponsiveValuesWidthType;

@@ -1,16 +1,22 @@
-![logo](./assets/logo-colored.svg)
+# Grigliata
 
 A styled-components grid system.
+
+![logo](./assets/logo-colored.svg)
 
 ## Why you should use it?
 
 * It's not rocket science
 * It works
-* It will force you to manage the responsiveness of your website/application. So no more random padding on your layout when used on tablet.
+* It will force you to manage the responsiveness of your website/application. So no more random padding on your website when used on a tablet.
 
-[Documentation](https://lcfd.github.io/grigliata/) that is also a demo.
+## Documentation
 
-## A full example
+You can find instructions and examples on the [documentation](https://lcfd.github.io/grigliata/) website.
+
+Or, if you want to see an example right away, look below ⬇️
+
+### A full example
 
 ```jsx
 export const App = () => {
@@ -45,14 +51,14 @@ export const App = () => {
 
 ## Development
 
-To test the package we suggest to use the [yalc](https://www.npmjs.com/package/yalc) package.
+To test the package we suggest using the [yalc](https://www.npmjs.com/package/yalc)](https://www.npmjs.com/package/yalc) package.
 
 Here's a useful command to build and update your local build:
 
-```
+```bash
 yarn build && yalc push
 ```
 
 ## Used by
 
-- [pycon.it](https://pycon.it)
+* 2018 [PyCon Italia](https://pycon.it)

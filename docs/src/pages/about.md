@@ -4,9 +4,7 @@ title: About
 
 # About
 
-
 ![logo](/img/logo-colored.svg)
-
 
 ![grigliata](/img/dustin-tramel-KuuQczwD4IA-unsplash.jpg)
 
@@ -21,6 +19,4 @@ A grid system made with styled components.
 
 [Grigliata](https://it.wikipedia.org/wiki/Grigliata) is the italian name of barbecue.
 
-Grigliata is a grid system.
-
-Barbeques are made on the grills.
+The barbecue has a grill for cooking.
